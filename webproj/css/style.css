@@ -1,0 +1,136 @@
+/*navigation bar mouse actions*/
+a: link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a: visited {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a: hover {
+	color: red;
+	background-color: transparent;
+	text-decoration:underline;
+}
+
+.active{
+	color: white;
+	background-color:green;
+	text-decoration;underline;
+}
+/*navigation bar*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111111;
+}
+
+li a:visited {
+	color: #ff00ff;
+	text-decoration: none;
+}
+
+/*header & footer*/
+ footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+}
+header {
+
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: left;
+	font-family: LCD;
+	font-size: 50px;
+}
+
+/*side navigation bar*/
+.sidenav {
+	height: 100%;
+	width:0px;
+	position: fixed;
+	z-index: 1;
+	background-color: black;
+	transition: 0.5s;
+	overflow-x: hidden;
+	padding-top: 35px;
+}
+.sidenav a{
+	color: white;
+	padding: 8px 8px 8px 8px;
+	text-align: center;
+	width: 200px;
+	text-decoration: none;
+	display: block;
+	background-color: #333333;
+	transition: 0.3s;
+}
+
+
+.sidenav a:hover{
+	color: #f1f1f1;
+}
+
+.sidenav a:active{
+	background-color: green;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size:30px;
+	margin-left: 50px;
+	color:white;
+	padding: 0;
+	margin-right: 0;
+	background-color:black;
+}
+
+.main{
+	margin-left: 210px; /*same as width of navigation bar*/
+	width: 50%;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+	width: 50%;
+	float: center;
+}
+
+@media screen and (max-height:450px){
+	.sidenav {padding-top:15px;}
+	.sidenav a{font-size: 18px;}
+}
+
+body{
+	font-family: "Lato",sans-serif;
+	transition: background-color .5s;
+}
